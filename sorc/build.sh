@@ -14,16 +14,15 @@ if [[ -d /scratch2 ]] ; then
  module load Module_ens_tracker.v1.1.15_for_Hera
 
 machine=hera
-export NETCDF_LDFLAGS="-L${NETCDF_ROOT}/lib -lnetcdff -lnetcdf -L${HDF5_ROOT}/lib -lhdf5_hl -lhdf5 -L${ZLIB_ROOT}/lib -lz -ldl -lm"
-export NETCDF_INCLUDES="-I${NETCDF_ROOT}/include -I${HDF5_ROOT}/include"
+export NETCDF_LDFLAGS="${netcdf_fortran_ROOT}/lib/libnetcdff.so ${hdf5_ROOT}/lib/libhdf5.so"
 
-export INC="${G2_INCd} ${NETCDF_INCLUDES}"
-export LIBS="${W3EMC_LIBd} ${W3NCO_LIBd} ${BACIO_LIB4} ${G2_LIBd} ${PNG_ROOT}/lib64/libpng.a ${JASPER_ROOT}/lib64/libjasper.a ${ZLIB_ROOT}/lib/libz.a ${NETCDF_LDFLAGS}"
+export INC="${G2_INCd}"
+export LIBS="${W3EMC_LIBd} ${W3NCO_LIBd} ${BACIO_LIB4} ${G2_LIBd} ${libpng_ROOT}/lib64/libpng.a ${jasper_ROOT}/lib64/libjasper.so ${zlib_ROOT}/lib/libz.a ${NETCDF_LDFLAGS}"
 export LIBS_SUP="${W3EMC_LIBd} ${W3NCO_LIBd}"
 export LIBS_UK="${W3NCO_LIB4} ${BACIO_LIB4}"
 
 for dir in *.fd; do
-#for dir in leadtime.fd; do
+#for dir in gettrk_gfs.fd; do
   cd $dir
   make clean
   make -f makefile_hera
