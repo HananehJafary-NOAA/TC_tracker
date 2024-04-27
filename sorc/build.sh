@@ -58,11 +58,11 @@ elif [[ -d /mnt/lfs1 ]] ; then
  module load Module_ens_tracker.v1.1.15_for_Jet
 
 machine=jet
-export NETCDF_LDFLAGS="-L${NETCDF_ROOT}/lib -lnetcdff -lnetcdf -L${HDF5_ROOT}/lib -lhdf5_hl -lhdf5 -L${ZLIB_ROOT}/lib -lz -ldl -lm"
-export NETCDF_INCLUDES="-I${NETCDF_ROOT}/include -I${HDF5_ROOT}/include"
+export NETCDF_LDFLAGS="-L${netcdf_fortran_ROOT}/lib -lnetcdff -L${netcdf_c_ROOT}/lib -lnetcdf -L${hdf5_ROOT}/lib -lhdf5_hl -lhdf5 -L${zlib_ROOT}/lib -lz -ldl -lm"
+export NETCDF_INCLUDES="-I${netcdf_fortran_ROOT}/include -I${hdf5_ROOT}/include"
 
 export INC="${G2_INCd} ${NETCDF_INCLUDES}"
-export LIBS="${W3EMC_LIBd} ${W3NCO_LIBd} ${BACIO_LIB4} ${G2_LIBd} ${PNG_ROOT}/lib64/libpng.a ${JASPER_ROOT}/lib64/libjasper.a ${ZLIB_ROOT}/lib/libz.a ${NETCDF_LDFLAGS}"
+export LIBS="${W3EMC_LIBd} ${W3NCO_LIBd} ${BACIO_LIB4} ${G2_LIBd} ${PNG_ROOT}/lib64/libpng.a ${jasper_ROOT}/lib64/libjasper.so ${zlib_ROOT}/lib/libz.a ${NETCDF_LDFLAGS}"
 export LIBS_SUP="${W3EMC_LIBd} ${W3NCO_LIBd}"
 export LIBS_UK="${W3NCO_LIB4} ${BACIO_LIB4}"
 

@@ -1,22 +1,23 @@
 #%Module  for JET  ################################################
 #module use /lfs4/HFIP/hfv3gfs/nwprod/hpc-stack.epic/libs/intel/2022.1.2/modulefiles/stack
-module use /lfs4/HFIP/hfv3gfs/role.epic/hpc-stack/libs/intel-2022.1.2/modulefiles/stack
-module load hpc/1.2.0
-module load hpc-intel/2022.1.2
-module load hpc-impi/2022.1.2
+#module use /lfs4/HFIP/hfv3gfs/role.epic/hpc-stack/libs/intel-2022.1.2/modulefiles/stack
 
-module load w3emc/2.9.2
+module use /mnt/lfs4/HFIP/hfv3gfs/role.epic/spack-stack/spack-stack-1.6.0/envs/gsi-addon-dev-rocky8/install/modulefiles/Core
+
+module load stack-intel/2021.5.0
+module load stack-intel-oneapi-mpi/2021.5.1
+
+module load w3emc/2.10.0
 module load w3nco/2.4.1
 module load bacio/2.4.1
-module load sp/2.3.3
-#module load nemsio/2.5.4
-#module load nemsiogfs/2.5.3
+module load sp/2.5.0
 module load sigio/2.3.2
 module load g2/3.4.5
 
-module load jasper/2.0.25
+module load jasper/2.0.32
 module load libpng/1.6.37
-module load zlib/1.2.11
-module load hdf5/1.10.6
-module load netcdf/4.7.4
-module load pnetcdf/1.10.0
+module load zlib/1.2.13
+module load netcdf-c/4.9.2
+module load netcdf-fortran/4.6.1
+module load hdf5/1.14.0
+#module load  parallel-netcdf/1.12.2
