@@ -48,7 +48,7 @@ set -x
 
 export envir=dev2
 export cyc=00
-export job=gfs_track_${cyc}
+export job=gfs_genesis_${cyc}
 
 export NWROOT=/mnt/lfs4/HFIP/hwrfv3/Hananeh.Jafary
 export DATAROOT=/mnt/lfs4/HFIP/hwrfv3/Hananeh.Jafary/Input
@@ -67,7 +67,7 @@ fi
 
 # CALL executable job script here
 #${NWROOT}/ens_tracker.${ens_tracker_ver}/jobs/JGFS_TC_TRACK
-${NWROOT}/New_TCtracker/jobs/JFV3_CYCLONE_TRACK_JP
+${NWROOT}/New_TCtracker/jobs/JFV3_CYCLONE_GENESIS_JP
 
 if [ $? -ne 0 ]; then
   ecflow_client --abort
