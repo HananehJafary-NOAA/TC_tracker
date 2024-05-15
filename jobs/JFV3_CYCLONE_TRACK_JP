@@ -98,14 +98,10 @@ else
   err_exit "FAILED ${jobid} - ERROR IN unknown platform - ABNORMAL EXIT"
 fi
 
-export JYYYY=`echo ${PDY} | cut -c1-4`
-export COMIN=${COMIN:-${COMROOT:?}/${NET}/${ens_tracker_ver}/${RUN}.${PDY}/${cyc}/genesis}
-export COMINgenvit=${COMINgenvit:-${COMROOT:?}/${NET}/${ens_tracker_ver}/genesis_vital_${JYYYY}}
-
-export COMOUT=${COMOUT:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/genesis/}
-export COMOUTgenvit=${COMOUT:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/genesis_vital/}
+export COMOUT=${COMOUT:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/tracks}
+export COMOUThur=${COMOUThur:-${COMROOT:?}/${NET}/${ens_tracker_ver}/global}
+export COMOUTatcf=${COMOUTatcf:-${COMROOT:?}/${NET}/${ens_tracker_ver}/atcf}
 mkdir -m 775 -p $COMOUT $COMOUThur $COMOUTatcf
-
 msg="HAS BEGUN on `hostname`"
 postmsg "$jlogfile" "$msg"
 
