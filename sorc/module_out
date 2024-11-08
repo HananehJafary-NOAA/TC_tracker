@@ -1,0 +1,478 @@
+The system default contains no modules
+  (env var: LMOD_SYSTEM_DEFAULT_MODULES is empty)
+  No changes in loaded modules
+
+
+- /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel-oneapi-mpi/2021.5.1/intel/2021.5.0 --
+   base-env/1.0.0    fms/2023.04                  met/9.1.3        nemsiogfs/2.5.3           py-netcdf4/1.5.8
+   cdo/2.2.0         global-workflow-env/1.0.0    metplus/3.1.1    netcdf-c/4.9.2            scotch/7.0.4
+   cprnc/1.0.3       gsi-env/1.0.0                nccmp/1.9.0.1    netcdf-cxx4/4.3.1         ufs-pyenv/1.0.0
+   crtm/2.4.0.1      gsi-ncdiag/1.1.2             ncio/1.1.2       netcdf-fortran/4.6.1      ufs-weather-model-env/1.0.0
+   esmf/8.6.0        hdf5/1.14.0                  nco/5.0.6        parallel-netcdf/1.12.2    wrf-io/1.2.0
+   fftw/3.3.10       mapl/2.40.3-esmf-8.6.0       nemsio/2.5.4     parallelio/2.5.10
+
+-------------------------------------------- /apps/modules/modulefamilies/intel_impi ---------------------------------------------
+   hdf5parallel/1.10.5        itac/2018 (D)    netcdf-hdf5parallel/4.7.0        pnetcdf/1.7.0     pnetcdf/1.11.2
+   hdf5parallel/1.10.6 (D)    itac/2019        netcdf-hdf5parallel/4.7.4 (D)    pnetcdf/1.10.0    tau/2.29
+
+-------------- /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0 ---------------
+   antlr/2.7.7                               libpng/1.6.37               py-setuptools/63.4.3
+   bacio/2.4.1                               libxcrypt/4.4.35            py-six/1.16.0
+   bufr/11.7.0                               libyaml/0.2.5               py-tomli/2.0.1
+   c-blosc/1.21.5                            nghttp2/1.57.0              py-typing-extensions/4.8.0
+   ca-certificates-mozilla/2023-05-30        openblas/0.3.24             py-versioneer/0.29
+   cmake/3.23.1                              openjpeg/2.3.1              py-wheel/0.41.2
+   crtm-fix/2.4.0.1_emc                      pkg-config/0.27.1           py-xarray/2023.7.0
+   curl/8.4.0                                prod_util/2.1.1             py-xlrd/2.0.1
+   ecbuild/3.7.2                             proj/9.2.1                  py-xlsxwriter/3.1.7
+   eccodes/2.32.0                     (D)    py-bottleneck/1.3.7         py-xlwt/1.3.0
+   fargparse/1.5.0                           py-cftime/1.0.3.4           python/3.11.6
+   g2/3.4.5                                  py-cython/0.29.36           sfcio/1.4.1
+   g2c/1.6.4                                 py-et-xmlfile/1.0.1         sigio/2.3.2
+   g2tmpl/1.10.2                             py-f90nml/1.4.3             snappy/1.1.10
+   gettext/0.19.8.1                          py-flit-core/3.9.0          sp/2.5.0
+   gftl-shared/1.6.1                         py-jinja2/3.1.2             sqlite/3.43.2
+   gftl/1.10.0                               py-markupsafe/2.1.3         stack-intel-oneapi-mpi/2021.5.1 (L)
+   git-lfs/2.10.0                            py-numexpr/2.8.4            stack-python/3.11.6
+   git/2.18.0                                py-numpy/1.23.4             udunits/2.2.28                  (D)
+   gmake/3.82                                py-openpyxl/3.1.2           util-linux-uuid/2.38.1
+   grib-util/1.3.0                    (D)    py-packaging/23.1           w3emc/2.10.0
+   gsl/2.7.1                                 py-pandas/1.5.3             w3nco/2.4.1
+   ip/4.3.0                                  py-pip/23.1.2               wget/1.14
+   jasper/2.0.32                             py-python-dateutil/2.8.2    wgrib2/2.0.8
+   landsfcutil/2.4.1                         py-pytz/2023.3              zlib/1.2.13
+   libbsd/0.11.7                             py-pyxlsb/1.0.10            zstd/1.5.2
+   libjpeg/2.1.0                             py-pyyaml/6.0
+   libmd/1.0.4                               py-setuptools-scm/7.1.0
+
+----------------------------------------------- /apps/modules/modulefamilies/intel -----------------------------------------------
+   R/3.5.0         (D)    hdf4/4.2.7          impi/2019.1.144        impi/2024.2.1           netcdf/4.2.1.1
+   R/4.0.2                hdf5/1.10.4         impi/2020              mvapich2/default (D)    netcdf/4.6.1
+   cdo/1.9.5              hdf5/1.10.5         impi/2022.1.2   (L)    mvapich2/2.3            netcdf/4.7.0    (D)
+   eccodes/2.8.2          hdf5/1.10.6         impi/2022.2.0          nco/4.9.1               netcdf4/4.2.1.1
+   grib_api/1.26.1        impi/default (D)    impi/2022.3.0          netcdf/3.6.3
+
+---------------------- /contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/Core ----------------------
+   stack-gcc/9.2.0    stack-intel/2021.5.0 (L)
+
+------------------------------------------------ /apps/lmod/lmod/modulefiles/Core ------------------------------------------------
+   lmod    settarg
+
+--------------------------------------------------- /apps/modules/modulefiles ----------------------------------------------------
+   R/3.6.1               forge/22.0.2           hpss                 (L)    matlab/R2023b              rocoto/1.3.7      (D)
+   advisor/2019   (D)    forge/23.1.2    (D)    hsms                        motif/2.3.8                ruby/3.2.3
+   advisor/2020          gdb/14.1               idl/8.7.3                   nccmp/1.9.1         (D)    szip/2.1
+   advisor/2020.2        gempak/7.4.2           imagemagick/7.1.1-11        ncl/6.6.2                  udunits/2.2.28
+   cairo/1.14.2          gempak/7.17.0   (D)    intel-tools/2022.1.2        nco/5.1.6           (D)    valgrind/3.16.1
+   cdo/2.3.0      (D)    git/2.42.0      (D)    intel-tools/2023.2.0 (D)    nvhpc-openmpi3/24.1        vtune/2020.2
+   cit                   globus-cli/3.25        intel/default        (D)    nvhpc/default       (D)    wgrib/1.8.1.0b
+   cmake/3.28.1   (D)    gnu/9.2.0b             intel/2022.1.2       (L)    nvhpc/24.1                 wgrib2/3.1.2_ncep
+   cnvgrib/1.4.0         gnu/9.2.0              intel/2023.2.0              papi/5.7.0                 wgrib2/3.1.2_wmo  (D)
+   contrib               gnu/13.2.0      (D)    intelpython/3.6.5           perl/5.38.0                xxdiff/5.1
+   ecflow/5.11.4         grads/2.2.3            intelpython/2022.1.2        pyferret/7.64
+   ferret/6.93    (D)    grib-util/1.2.4        intelpython/2023.2.0 (D)    pyncl/6.6.2
+   ferret/7.6.0          hpcrpt                 jasper/4.2.0         (D)    rocoto/1.3.6
+
+  Where:
+   D:  Default Module
+   L:  Module is loaded
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/w3emc/2.10.0.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : w3emc")
+whatis("Version : 2.10.0")
+whatis("Target : core2")
+whatis("Short description : This library contains Fortran 90 decoder/encoder routines for GRIB edition 1 with EMC changes.")
+whatis("Configure options : -DBUILD_WITH_BUFR:BOOL=OFF -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON -DBUILD_4:BOOL=ON -DBUILD_D:BOOL=ON -DBUILD_8:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=OFF -DBUILD_WITH_EXTRA_DEPS:BOOL=ON")
+help([[Name   : w3emc]])
+help([[Version: 2.10.0]])
+help([[Target : core2]])
+help()
+help([[This library contains Fortran 90 decoder/encoder routines for GRIB
+edition 1 with EMC changes. This is part of the NCEPLIBS project.]])
+depends_on("bacio/2.4.1")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/lib64")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/lib64")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/.")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/.")
+setenv("W3EMC_LIB4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/lib64/libw3emc_4.a")
+setenv("W3EMC_INC4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/include_4")
+setenv("W3EMC_LIB8","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/lib64/libw3emc_8.a")
+setenv("W3EMC_INC8","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/include_8")
+setenv("W3EMC_LIBd","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/lib64/libw3emc_d.a")
+setenv("W3EMC_INCd","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq/include_d")
+setenv("w3emc_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3emc-2.10.0-r4h4loq")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/w3nco/2.4.1.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : w3nco")
+whatis("Version : 2.4.1")
+whatis("Target : core2")
+whatis("Short description : This library contains Fortran 90 decoder/encoder routines for GRIB edition 1 with NCO changes. This library is deprecated; all functionality has been moved to the w3emc library.")
+help([[Name   : w3nco]])
+help([[Version: 2.4.1]])
+help([[Target : core2]])
+help()
+help([[This library contains Fortran 90 decoder/encoder routines for GRIB
+edition 1 with NCO changes. This library is deprecated; all
+functionality has been moved to the w3emc library. This is part of the
+NCEPLIBS project.]])
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/lib")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/.")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/.")
+setenv("w3nco_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot")
+setenv("W3NCO_INC4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/include_4")
+setenv("W3NCO_INC8","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/include_8")
+setenv("W3NCO_INCd","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/include_d")
+setenv("W3NCO_LIB4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/lib/libw3nco_4.a")
+setenv("W3NCO_LIB8","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/lib/libw3nco_8.a")
+setenv("W3NCO_LIBd","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/w3nco-2.4.1-6glx3ot/lib/libw3nco_d.a")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/bacio/2.4.1.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : bacio")
+whatis("Version : 2.4.1")
+whatis("Target : core2")
+whatis("Short description : The bacio library performs binary I/O for the NCEP models, processing unformatted byte-addressable data records, and transforming the little endian files and big endian files.")
+whatis("Configure options : -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON ")
+help([[Name   : bacio]])
+help([[Version: 2.4.1]])
+help([[Target : core2]])
+help()
+help([[The bacio library performs binary I/O for the NCEP models, processing
+unformatted byte-addressable data records, and transforming the little
+endian files and big endian files.]])
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf/lib")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf/.")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf/.")
+setenv("bacio_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf")
+setenv("BACIO_INC4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf/include_4")
+setenv("BACIO_INC8","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf/include_8")
+setenv("BACIO_LIB4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf/lib/libbacio_4.a")
+setenv("BACIO_LIB8","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/bacio-2.4.1-5ksj5yf/lib/libbacio_8.a")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/sp/2.5.0.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : sp")
+whatis("Version : 2.5.0")
+whatis("Target : core2")
+whatis("Short description : The spectral transform library splib contains FORTRAN subprograms to be used for a variety of spectral transform functions. This is part of the NCEPLIBS project.")
+whatis("Configure options : -DBUILD_SHARED_LIBS:BOOL=OFF -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON -DOPENMP:BOOL=OFF -DBUILD_4:BOOL=ON -DBUILD_D:BOOL=ON -DBUILD_8:BOOL=ON -DBUILD_DEPRECATED:BOOL=OFF -DBUILD_TESTING:BOOL=OFF")
+help([[Name   : sp]])
+help([[Version: 2.5.0]])
+help([[Target : core2]])
+help()
+help([[The spectral transform library splib contains FORTRAN subprograms to be
+used for a variety of spectral transform functions. This is part of the
+NCEPLIBS project.]])
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sp-2.5.0-5vqrrxx/lib64")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sp-2.5.0-5vqrrxx/lib64")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sp-2.5.0-5vqrrxx/.")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sp-2.5.0-5vqrrxx/.")
+setenv("SP_LIB4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sp-2.5.0-5vqrrxx/lib64/libsp_4.a")
+setenv("SP_INC4","include_4")
+setenv("SP_LIB8","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sp-2.5.0-5vqrrxx/lib64/libsp_8.a")
+setenv("SP_INC8","include_8")
+setenv("SP_LIBd","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sp-2.5.0-5vqrrxx/lib64/libsp_d.a")
+setenv("SP_INCd","include_d")
+setenv("sp_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sp-2.5.0-5vqrrxx")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/sigio/2.3.2.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : sigio")
+whatis("Version : 2.3.2")
+whatis("Target : core2")
+whatis("Short description : The SIGIO library provides an Application Program Interface for performing I/O on the sigma restart file of the NOAA global spectral model.")
+whatis("Configure options : -DENABLE_TESTS:BOOL=OFF")
+help([[Name   : sigio]])
+help([[Version: 2.3.2]])
+help([[Target : core2]])
+help()
+help([[The SIGIO library provides an Application Program Interface for
+performing I/O on the sigma restart file of the NOAA global spectral
+model. This is part of the NCEPLIBS project.]])
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/lib")
+prepend_path("CPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/include")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/.")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/.")
+setenv("SIGIO_LIB4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/lib/libsigio.a")
+setenv("SIGIO_INC4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/include")
+setenv("SIGIO_LIB","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/lib/libsigio.a")
+setenv("SIGIO_INC","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/include")
+setenv("sigio_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5")
+setenv("SIGIO_INC","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/include")
+setenv("SIGIO_LIB","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/lib/libsigio.a")
+setenv("SIGIO_INC4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/include")
+setenv("SIGIO_LIB4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/sigio-2.3.2-xuoebp5/lib/libsigio.a")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/g2/3.4.5.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : g2")
+whatis("Version : 3.4.5")
+whatis("Target : core2")
+whatis("Short description : Utilities for coding/decoding GRIB2 messages. This library contains Fortran 90 decoder/encoder routines for GRIB edition 2, as well as indexing/searching utility routines.")
+whatis("Configure options : -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON  -DBUILD_4:BOOL=OFF -DBUILD_D:BOOL=OFF")
+help([[Name   : g2]])
+help([[Version: 3.4.5]])
+help([[Target : core2]])
+help()
+help([[Utilities for coding/decoding GRIB2 messages. This library contains
+Fortran 90 decoder/encoder routines for GRIB edition 2, as well as
+indexing/searching utility routines. This is part of the NCEPLIBS
+project.]])
+depends_on("jasper/2.0.32")
+depends_on("libpng/1.6.37")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy/lib64")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy/lib64")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy/.")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy/.")
+setenv("G2_LIB4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy/lib64/libg2_4.a")
+setenv("G2_INC4","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy/include_4")
+setenv("G2_LIBd","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy/lib64/libg2_d.a")
+setenv("G2_INCd","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy/include_d")
+setenv("g2_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/g2-3.4.5-n75oxoy")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/jasper/2.0.32.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : jasper")
+whatis("Version : 2.0.32")
+whatis("Target : core2")
+whatis("Short description : Library for manipulating JPEG-2000 images")
+whatis("Configure options : --prefix=/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz --enable-libjpeg --disable-opengl --enable-shared --disable-debug")
+help([[Name   : jasper]])
+help([[Version: 2.0.32]])
+help([[Target : core2]])
+help()
+help([[Library for manipulating JPEG-2000 images]])
+depends_on("libjpeg/2.1.0")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/share/man")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/lib64")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/lib64")
+prepend_path("CPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/include")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/lib64/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/.")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/share/man")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/lib64/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz/.")
+setenv("jasper_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/jasper-2.0.32-r6zztbz")
+append_path("MANPATH","")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/libpng/1.6.37.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : libpng")
+whatis("Version : 1.6.37")
+whatis("Target : core2")
+whatis("Short description : libpng is the official PNG reference library.")
+help([[Name   : libpng]])
+help([[Version: 1.6.37]])
+help([[Target : core2]])
+help()
+help([[libpng is the official PNG reference library.]])
+depends_on("zlib/1.2.13")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/share/man")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/lib")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/lib64")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/lib64")
+prepend_path("CPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/include")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/lib64/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/.")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/share/man")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/lib64/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek/.")
+setenv("libpng_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek")
+setenv("PNG_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/libpng-1.6.37-7tdy3ek")
+append_path("MANPATH","")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/zlib/1.2.13.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : zlib")
+whatis("Version : 1.2.13")
+whatis("Target : core2")
+whatis("Short description : A free, general-purpose, legally unencumbered lossless data-compression library. ")
+help([[Name   : zlib]])
+help([[Version: 1.2.13]])
+help([[Target : core2]])
+help()
+help([[A free, general-purpose, legally unencumbered lossless data-compression
+library.]])
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/share/man")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/lib")
+prepend_path("CPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/include")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/.")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/share/man")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay/.")
+setenv("zlib_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/zlib-1.2.13-j77osay")
+append_path("MANPATH","")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel-oneapi-mpi/2021.5.1/intel/2021.5.0/netcdf-c/4.9.2.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : netcdf-c")
+whatis("Version : 4.9.2")
+whatis("Target : core2")
+whatis("Short description : NetCDF (network Common Data Form) is a set of software libraries and machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. This is the C distribution.")
+help([[Name   : netcdf-c]])
+help([[Version: 4.9.2]])
+help([[Target : core2]])
+help()
+help([[NetCDF (network Common Data Form) is a set of software libraries and
+machine-independent data formats that support the creation, access, and
+sharing of array-oriented scientific data. This is the C distribution.]])
+depends_on("c-blosc/1.21.5")
+depends_on("curl/8.4.0")
+depends_on("hdf5/1.14.0")
+depends_on("zlib/1.2.13")
+depends_on("zstd/1.5.2")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/share/man")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/lib")
+prepend_path("CPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/include")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/.")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/share/man")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/.")
+append_path("HDF5_PLUGIN_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24/plugins")
+setenv("netcdf_c_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-c-4.9.2-wxvro24")
+append_path("MANPATH","")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel-oneapi-mpi/2021.5.1/intel/2021.5.0/netcdf-fortran/4.6.1.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : netcdf-fortran")
+whatis("Version : 4.6.1")
+whatis("Target : core2")
+whatis("Short description : NetCDF (network Common Data Form) is a set of software libraries and machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. This is the Fortran distribution.")
+whatis("Configure options : --enable-static --enable-shared --disable-doxygen --disable-parallel-tests")
+help([[Name   : netcdf-fortran]])
+help([[Version: 4.6.1]])
+help([[Target : core2]])
+help()
+help([[NetCDF (network Common Data Form) is a set of software libraries and
+machine-independent data formats that support the creation, access, and
+sharing of array-oriented scientific data. This is the Fortran
+distribution.]])
+depends_on("netcdf-c/4.9.2")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/share/man")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/lib")
+prepend_path("CPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/include")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/.")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/share/man")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q/.")
+setenv("netcdf_fortran_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/netcdf-fortran-4.6.1-ornuy5q")
+append_path("MANPATH","")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel-oneapi-mpi/2021.5.1/intel/2021.5.0/hdf5/1.14.0.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : hdf5")
+whatis("Version : 1.14.0")
+whatis("Target : core2")
+whatis("Short description : HDF5 is a data model, library, and file format for storing and managing data. It supports an unlimited variety of datatypes, and is designed for flexible and efficient I/O and for high volume and complex data. ")
+whatis("Configure options : -DALLOW_UNSUPPORTED:BOOL=ON -DHDF5_BUILD_EXAMPLES:BOOL=OFF -DBUILD_TESTING:BOOL=OFF -DHDF5_ENABLE_MAP_API:BOOL=OFF -DHDF5_ENABLE_Z_LIB_SUPPORT:BOOL=ON -DHDF5_ENABLE_SZIP_SUPPORT:BOOL=ON -DHDF5_ENABLE_SZIP_ENCODING:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=ON -DONLY_SHARED_LIBS:BOOL=OFF -DHDF5_ENABLE_PARALLEL:BOOL=ON -DHDF5_ENABLE_THREADSAFE:BOOL=ON -DHDF5_BUILD_HL_LIB:BOOL=ON -DHDF5_BUILD_CPP_LIB:BOOL=OFF -DHDF5_BUILD_FORTRAN:BOOL=ON -DHDF5_BUILD_JAVA:BOOL=OFF -DHDF5_BUILD_TOOLS:BOOL=ON -DMPI_CXX_COMPILER:PATH=/apps/oneapi/mpi/2021.5.1/bin/mpiicpc -DMPI_C_COMPILER:PATH=/apps/oneapi/mpi/2021.5.1/bin/mpiicc -DCMAKE_CXX_COMPILER:PATH=/apps/oneapi/mpi/2021.5.1/bin/mpiicpc -DCMAKE_C_COMPILER:PATH=/apps/oneapi/mpi/2021.5.1/bin/mpiicc -DMPI_Fortran_COMPILER:PATH=/apps/oneapi/mpi/2021.5.1/bin/mpiifort -DCMAKE_Fortran_COMPILER:PATH=/apps/oneapi/mpi/2021.5.1/bin/mpiifort")
+help([[Name   : hdf5]])
+help([[Version: 1.14.0]])
+help([[Target : core2]])
+help()
+help([[HDF5 is a data model, library, and file format for storing and managing
+data. It supports an unlimited variety of datatypes, and is designed for
+flexible and efficient I/O and for high volume and complex data.]])
+depends_on("pkg-config/0.27.1")
+depends_on("zlib/1.2.13")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/bin")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/lib")
+prepend_path("CPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/include")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/.")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/bin")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/.")
+append_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb/lib")
+setenv("hdf5_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb")
+setenv("HDF5_DIR","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/hdf5-1.14.0-uwrq2sb")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel-oneapi-mpi/2021.5.1/intel/2021.5.0/parallel-netcdf/1.12.2.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : parallel-netcdf")
+whatis("Version : 1.12.2")
+whatis("Target : core2")
+whatis("Short description : PnetCDF (Parallel netCDF) is a high-performance parallel I/O library for accessing files in format compatibility with Unidata's NetCDF, specifically the formats of CDF-1, 2, and 5. ")
+whatis("Configure options : --with-mpi=/apps/oneapi/mpi/2021.5.1 SEQ_CC=/misc/contrib/spack-stack/spack-stack-1.6.0/spack/lib/spack/env/intel/icc --enable-cxx --enable-fortran CFLAGS=-fPIC CXXFLAGS=-fPIC FCFLAGS=-fPIC FFLAGS=-fPIC --enable-relax-coord-bound --enable-shared --enable-static --disable-silent-rules")
+help([[Name   : parallel-netcdf]])
+help([[Version: 1.12.2]])
+help([[Target : core2]])
+help()
+help([[PnetCDF (Parallel netCDF) is a high-performance parallel I/O library for
+accessing files in format compatibility with Unidata's NetCDF,
+specifically the formats of CDF-1, 2, and 5.]])
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/share/man")
+prepend_path("LD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/lib")
+prepend_path("DYLD_LIBRARY_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/lib")
+prepend_path("CPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/include")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/.")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/bin")
+prepend_path("MANPATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/share/man")
+prepend_path("PKG_CONFIG_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to/.")
+setenv("parallel_netcdf_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/parallel-netcdf-1.12.2-yutj6to")
+append_path("MANPATH","")
+
+------------------------------------------------------------------------------------------------------------------------------
+   /misc/contrib/spack-stack/spack-stack-1.6.0/envs/gsi-addon-intel/install/modulefiles/intel/2021.5.0/prod_util/2.1.1.lua:
+------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : prod-util")
+whatis("Version : 2.1.1")
+whatis("Target : core2")
+whatis("Short description :  Product utilities for the NCEP models.")
+help([[Name   : prod-util]])
+help([[Version: 2.1.1]])
+help([[Target : core2]])
+help()
+help([[ Product utilities for the NCEP models. This is part of NOAA's NCEPLIBS
+project.]])
+depends_on("w3emc/2.10.0")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t/bin")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t/.")
+prepend_path("PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t/bin")
+prepend_path("CMAKE_PREFIX_PATH","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t/.")
+setenv("prod_util_ROOT","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t")
+setenv("MDATE","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t/bin/mdate")
+setenv("NDATE","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t/bin/ndate")
+setenv("NHOUR","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t/bin/nhour")
+setenv("FSYNC","/misc/contrib/spack-stack/spack-stack-1.6.0/envs/unified-env-rocky8/install/intel/2021.5.0/prod-util-2.1.1-s72wb5t/bin/fsync_file")
+

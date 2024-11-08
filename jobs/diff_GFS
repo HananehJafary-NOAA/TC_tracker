@@ -1,0 +1,129 @@
+1c1
+< #!/bin/sh 
+---
+> #!/bin/bash 
+18c18,19
+< export jlogfile=${jlogfile:-${COMROOT}/logs/jlogfiles/jlogfile.${jobid}}
+---
+> #export jlogfile=${jlogfile:-${COMROOT}/logs/jlogfiles/jlogfile.${jobid}}
+> export jlogfile=${jlogfile:-${DATA}/jlogfile.${jobid}}
+25d25
+< #export RUN=${RUN:-gfs}
+38c38
+< export SENDECF=${SENDECF:-YES}
+---
+> export SENDECF=${SENDECF:-NO}
+40c40
+< export SENDDBN=${SENDDBN:-YES}
+---
+> export SENDDBN=${SENDDBN:-NO}
+45c45
+< export HOMEens_tracker=${HOMEens_tracker:-${NWROOT:?}/ens_tracker.${ens_tracker_ver}}
+---
+> export HOMEens_tracker=${HOMEens_tracker:-${NWROOT:?}/tracker_package}
+48a49
+> export SCRIPTens_tracker=${SCRIPTens_tracker:-$HOMEens_tracker/scripts}
+53,54c54,56
+< setpdy.sh
+< . PDY
+---
+> #setpdy.sh
+> #. PDY
+> export PDY=20240923
+59,60c61,62
+< export COMINgfs=${COMINgfs:-$(compath.py gfs/prod/gfs.$PDY)}
+< export COMINsyn=${COMINsyn:-$(compath.py arch/prod/syndat)}
+---
+> #mac=`echo ${SITE}`
+> #mac2=$(hostname | cut -c1-2)
+62,65c64,100
+< export COMOUT=${COMOUT:-${COMROOT:?}/${NET}/${envir}/${RUN}.${PDY}/${cyc}/tctrack}
+< export COMOUThur=${COMOUThur:-${COMROOT:?}/${NET}/${envir}/global}
+< export COMOUTatcf=${COMOUTatcf:-${COMROOT:?}/${NET}/${envir}/atcf}
+< mkdir -m 775 -p $COMOUT $COMOUThur $COMOUTatcf
+---
+> if [[ -d /scratch2 ]] ; then
+>   # We are on NOAA Hera
+> #  export COMINgfs=${COMINgfs:-${COMROOTp1}/gfs/prod/gfs.${PDY}}
+> #  export COMINgfs=/scratch2/NCEPDEV/ensemble/Jiayi.Peng/noscrub/data_4_gfs
+> #  export COMINsyn=${COMINsyn:-${COMROOTp1}/arch/prod/syndat}
+> #  export COMINsyn=/scratch1/NCEPDEV/hwrf/noscrub/input/SYNDAT
+>   export COMINsyn=/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/TCvital
+>   export COMINgfs=/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/gfs.${PDY}
+> 
+> elif [[ -d /work ]] ; then
+>   # We are on MSU Orion
+> #  export COMINgfs=${COMINgfs:-${COMROOTp1}/gfs/prod/gfs.${PDY}}
+> #  export COMINgfs=/work/noaa/stmp/Jiayi.Peng/data_4_gfs
+> #  export COMINsyn=${COMINsyn:-${COMROOTp1}/arch/prod/syndat}
+> #  export COMINsyn=/work/noaa/global/kfriedma/glopara/git/tracker/syndat
+>   export COMINsyn=/work/noaa/global/Jiayi.Peng/syndat
+>   export COMINgfs=/work/noaa/global/Jiayi.Peng/ptmp/gfs.${PDY}
+> 
+> elif [[ -d /lfs5/HFIP ]] ; then
+>   # We are on NOAA Jet
+> #  export COMINgfs=${COMINgfs:-${COMROOTp1}/gfs/prod/gfs.${PDY}}
+> #  export COMINsyn=${COMINsyn:-${COMROOTp1}/arch/prod/syndat}
+> #  export COMINgfs=${COMINgfs:-/mnt/lfs3/projects/hwrfv3/Jiayi.Peng/data/gfs.${PDY}}
+>   export COMINsyn=${COMINsyn:-/mnt/lfs5/HFIP/hwrf-data/hwrf-input/SYNDAT-PLUS}
+>   export COMINgfs=${COMINgfs:-/mnt/lfs5/HFIP/hwrfv3/Hananeh.Jafary/gfs_data/gfs.${PDY}}
+> 
+> elif [[ -d /lfs/h1 ]] ; then
+>   # We are on NOAA wcoss2
+> #  export COMINgfs=${COMINgfs:-$(compath.py $envir/com/gfs/${gfs_ver})/gfs.${PDY}}
+> #  export COMINsyn=${COMINsyn:-$(compath.py $envir/com/gfs/${gfs_ver})/syndat}
+>   export COMINgfs=/lfs/h1/ops/prod/com/gfs/v16.3/gfs.$PDY
+>   export COMINsyn=/lfs/h1/ops/prod/com/gfs/v16.3/syndat
+> 
+> else
+>   echo Job failed: unknown platform 1>&2
+>   err_exit "FAILED ${jobid} - ERROR IN unknown platform - ABNORMAL EXIT"
+> fi
+66a102,105
+> export COMOUT=${COMOUT:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/tracks}
+> export COMOUThur=${COMOUThur:-${COMROOT:?}/${NET}/${ens_tracker_ver}/global}
+> export COMOUTatcf=${COMOUTatcf:-${COMROOT:?}/${NET}/${ens_tracker_ver}/atcf}
+> mkdir -m 775 -p $COMOUT $COMOUThur $COMOUTatcf
+73,99c112
+< # Execute the script
+< export cmodel=gfs
+< export loopnum=1
+< export ymdh=${PDY}${cyc}
+< 
+< export gfsdir=${COMINgfs}/${cyc}
+< 
+< export pert="p01"
+< pertdir=${DATA}/${cmodel}/${pert}
+< mkdir -p $pertdir
+< 
+< #-----------input data checking -----------------
+< ${USHens_tracker}/data_check_gfs.sh 
+< # exit code 6 = missing data of opportunity
+< if [ $? -eq 6 ]; then exit; fi
+< #------------------------------------------------
+< 
+< #outfile=${pertdir}/trkr.${cmodel}.${pert}.${ymdh}.out
+< 
+< mac=`echo ${SITE}`
+< if [ $mac = TIDE -o $mac = GYRE ] ; then # For WCOSS
+<   machine=wcoss
+<   ${USHens_tracker}/extrkr_gfs.sh ${loopnum} ${cmodel} ${ymdh} ${pert} ${pertdir} #2>&1 >${outfile}
+< elif [ $mac = LUNA -o $mac = SURGE ] ; then # For CRAY
+<   machine=cray
+<   ${APRUNTRACK} ${USHens_tracker}/extrkr_gfs.sh ${loopnum} ${cmodel} ${ymdh} ${pert} ${pertdir} #2>&1 >${outfile}
+< fi
+---
+> ${SCRIPTens_tracker}/exgfs_tc_track.sh
+101,112d113
+< 
+< if [ "$SENDCOM" = 'YES' ]; then
+<   if [ -s ${pertdir}/trak.avno.atcfunix.${PDY}${cyc} ]; then
+<     cp ${pertdir}/trak.avno.atcfunix.${PDY}${cyc} ${COMOUT}/avn.t${cyc}z.cyclone.trackatcfunix
+< 
+<     cat ${pertdir}/trak.avno.atcfunix.${PDY}${cyc} | \
+<       sed s:AVNO:GFSO:g \
+<     > ${COMOUT}/gfso.t${cyc}z.cyclone.trackatcfunix
+<   fi
+< fi
+< 
+< #############################################################
