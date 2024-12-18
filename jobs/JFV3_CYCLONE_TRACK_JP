@@ -42,7 +42,7 @@ export SENDDBN=${SENDDBN:-NO}
 ####################################
 # Specify Execution Areas
 ####################################
-export HOMEens_tracker=${HOMEens_tracker:-${NWROOT:?}/ens_tracker.${ens_tracker_ver}}
+export HOMEens_tracker=${HOMEens_tracker:-${NWROOT:?}/fix_cmake}
 export EXECens_tracker=${EXECens_tracker:-$HOMEens_tracker/exec}
 export FIXens_tracker=${FIXens_tracker:-$HOMEens_tracker/fix}
 export USHens_tracker=${USHens_tracker:-$HOMEens_tracker/ush}
@@ -53,7 +53,7 @@ export SCRIPTens_tracker=${SCRIPTens_tracker:-$HOMEens_tracker/scripts}
 ##############################
 #setpdy.sh
 #. PDY
-export PDY=20230413
+export PDY=20240923
 
 ##############################################
 # Define COM directories
@@ -67,8 +67,8 @@ if [[ -d /scratch2 ]] ; then
 #  export COMINgfs=/scratch2/NCEPDEV/ensemble/Jiayi.Peng/noscrub/data_4_gfs
 #  export COMINsyn=${COMINsyn:-${COMROOTp1}/arch/prod/syndat}
 #  export COMINsyn=/scratch1/NCEPDEV/hwrf/noscrub/input/SYNDAT
-  export COMINsyn=/scratch2/NCEPDEV/ensemble/Jiayi.Peng/noscrub/MetTCData/TCvital
-  export COMINgfs=/scratch2/NCEPDEV/ensemble/Jiayi.Peng/noscrub/ptmp/gfs.${PDY}
+  export COMINsyn=/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/TCvital
+  export COMINgfs=/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/gfs.${PDY}
 
 elif [[ -d /work ]] ; then
   # We are on MSU Orion
@@ -79,13 +79,14 @@ elif [[ -d /work ]] ; then
   export COMINsyn=/work/noaa/global/Jiayi.Peng/syndat
   export COMINgfs=/work/noaa/global/Jiayi.Peng/ptmp/gfs.${PDY}
 
-elif [[ -d /lfs4/HFIP ]] ; then
+elif [[ -d /lfs5/HFIP ]] ; then
   # We are on NOAA Jet
 #  export COMINgfs=${COMINgfs:-${COMROOTp1}/gfs/prod/gfs.${PDY}}
 #  export COMINsyn=${COMINsyn:-${COMROOTp1}/arch/prod/syndat}
 #  export COMINgfs=${COMINgfs:-/mnt/lfs3/projects/hwrfv3/Jiayi.Peng/data/gfs.${PDY}}
-  export COMINsyn=${COMINsyn:-/mnt/lfs4/HFIP/hwrf-data/hwrf-input/SYNDAT}
-  export COMINgfs=${COMINgfs:-/mnt/lfs4/HFIP/hwrfv3/Jiayi.Peng/data/gfs.20230222}
+  export COMINsyn=${COMINsyn:-/mnt/lfs5/HFIP/hwrfv3/Hananeh.Jafary/TCvital}
+  export COMINgfs=${COMINgfs:-/mnt/lfs5/HFIP/hwrfv3/Hananeh.Jafary/gfs_data/gfs.${PDY}}
+
 elif [[ -d /lfs/h1 ]] ; then
   # We are on NOAA wcoss2
 #  export COMINgfs=${COMINgfs:-$(compath.py $envir/com/gfs/${gfs_ver})/gfs.${PDY}}
@@ -98,7 +99,7 @@ else
   err_exit "FAILED ${jobid} - ERROR IN unknown platform - ABNORMAL EXIT"
 fi
 
-export COMOUT=${COMOUT:-${COMROOT:?}/${NET}/${ens_tracker_ver}/${RUN}.${PDY}/${cyc}/tctrack}
+export COMOUT=${COMOUT:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/tracks}
 export COMOUThur=${COMOUThur:-${COMROOT:?}/${NET}/${ens_tracker_ver}/global}
 export COMOUTatcf=${COMOUTatcf:-${COMROOT:?}/${NET}/${ens_tracker_ver}/atcf}
 mkdir -m 775 -p $COMOUT $COMOUThur $COMOUTatcf
