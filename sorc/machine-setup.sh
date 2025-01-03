@@ -35,12 +35,14 @@ elif [[ -d /scratch1/NCEPDEV ]] ; then
     fi
     target=hera
     module purge
-elif [[ -d /work2/noaa ]] ; then
-    # We are on MSU Orion
-    if ( ! eval module help > /dev/null 2>&1 ) ; then
-        echo load the module command 1>&2
-        source /apps/lmod/lmod/init/$__ms_shell
-    fi
+elif [[ -d /work2/noaa ]]; then
+  # We are on MSU Orion or Hercules
+  mount=$(findmnt -n -o SOURCE /home)
+  if [[ ${mount} =~ "hercules" ]]; then
+    MACHINE_ID=hercules
+  else
+    MACHINE_ID=orion
+  fi
     target=orion || hercules
     module purge
     module use /apps/modulefiles/core

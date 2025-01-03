@@ -42,7 +42,7 @@ export SENDDBN=${SENDDBN:-NO}
 ####################################
 # Specify Execution Areas
 ####################################
-export HOMEens_tracker=${HOMEens_tracker:-${NWROOT:?}/fix_cmake}
+export HOMEens_tracker=${HOMEens_tracker:-${NWROOT:?}}
 export EXECens_tracker=${EXECens_tracker:-$HOMEens_tracker/exec}
 export FIXens_tracker=${FIXens_tracker:-$HOMEens_tracker/fix}
 export USHens_tracker=${USHens_tracker:-$HOMEens_tracker/ush}

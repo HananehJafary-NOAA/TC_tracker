@@ -52,6 +52,5 @@ load(pathJoin("sigio", sigio_ver))
 setenv("CMAKE_C_COMPILER", "mpiicc")
 setenv("CMAKE_CXX_COMPILER", "mpiicpc")
 setenv("CMAKE_Fortran_COMPILER", "mpiifort")
-setenv("CMAKE_Platform", "jet.intel")
+setenv("CMAKE_Platform", "hercules.intel")
 
-whatis("Description: HAFS Application environment")

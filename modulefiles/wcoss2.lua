@@ -53,4 +53,3 @@ setenv("CMAKE_CXX_COMPILER", "CC")
 setenv("CMAKE_Fortran_COMPILER", "ftn")
 setenv("CMAKE_Platform", "wcoss2")
 
-whatis("Description: HAFS Applicationenvironment")

@@ -58,4 +58,3 @@ setenv("CMAKE_CXX_COMPILER", "mpiicpc")
 setenv("CMAKE_Fortran_COMPILER", "mpiifort")
 setenv("CMAKE_Platform", "hera.intel")
 
-whatis("Description: HAFS Application environment")
