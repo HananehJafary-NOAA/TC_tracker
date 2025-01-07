@@ -53,7 +53,7 @@ export SCRIPTens_tracker=${SCRIPTens_tracker:-$HOMEens_tracker/scripts}
 ##############################
 #setpdy.sh
 #. PDY
-export PDY=20240923
+export PDY=20230930
 
 ##############################################
 # Define COM directories
@@ -65,7 +65,7 @@ if [[ -d /scratch2 ]] ; then
 #  export COMINsyn=${COMINsyn:-${COMROOTp1}/arch/prod/syndat}
 #  export COMINsyn=/scratch1/NCEPDEV/hwrf/noscrub/input/SYNDAT
   export COMINsyn=${COMINsyn:-/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/TCvital}
-  export COMINgfs=${COMINsyn:-/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/gfs.${PDY}}
+  export COMINgfs=${COMINgfs:-/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/gfs.${PDY}}
 
 elif [[ -d /work ]] ; then
   # We are on MSU Orion

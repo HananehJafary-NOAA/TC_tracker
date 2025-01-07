@@ -32,7 +32,7 @@ load(pathJoin("libpng", libpng_ver))
 hdf5_ver=os.getenv("hdf5_ver") or "1.14.0"
 load(pathJoin("hdf5", hdf5_ver))
 
-netcdf_c_ver=os.getenv("netcdf_c_ver") or "4.9.2" 
+netcdf_c_ver=os.getenv("netcdf_c_ver") or "4.9.2"
 load(pathJoin("netcdf-c", netcdf_c_ver))
 
 netcdf_fortran_ver=os.getenv("netcdf_fortran_ver") or "4.6.1"
@@ -53,8 +53,18 @@ load(pathJoin("w3emc", w3emc_ver))
 sigio_ver=os.getenv("sigio_ver") or "2.3.2"
 load(pathJoin("sigio", sigio_ver))
 
+prod_util=os.getenv("prod_util_ver") or "2.1.1"
+load(pathJoin("prod_util", prod_util_ver))
+
+wgrib2_ver=os.getenv("wgrib2_ver") or "2.0.8"
+load(pathJoin("wgrib2", wgrib2_ver))
+
+grib_util_ver=os.getenv("grib_util_ver") or "1.3.0"
+load(pathJoin("grib-util", grib_util_ver))
+
 setenv("CMAKE_C_COMPILER", "mpiicc")
 setenv("CMAKE_CXX_COMPILER", "mpiicpc")
 setenv("CMAKE_Fortran_COMPILER", "mpiifort")
 setenv("CMAKE_Platform", "hera.intel")
+
 
