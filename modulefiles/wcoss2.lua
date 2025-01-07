@@ -33,23 +33,36 @@ libjpeg_ver=os.getenv("libjpeg_ver") or "9c"
 load(pathJoin("libjpeg", libjpeg_ver))
 setenv("JPEG_LIBRARIES", "/apps/spack/libjpeg/9c/intel/19.1.3.304/jkr3isi257ktoouprwaxcn4twtye747z/lib")
 
-hdf5_ver=os.getenv("hdf5_ver") or "1.14.0"
-load(pathJoin("hdf5-C", hdf5_ver))
+hdf5_ver=os.getenv("hdf5_ver") or "1.10.6"
+load(pathJoin("hdf5", hdf5_ver))
 
-netcdf_ver=os.getenv("netcdf_ver") or "4.9.2"
-load(pathJoin("netcdf-C", netcdf_ver))
+netcdf_ver=os.getenv("netcdf_ver") or "4.7.4"
+load(pathJoin("netcdf", netcdf_ver))
 
 g2_ver=os.getenv("g2_ver") or "3.4.5"
 load(pathJoin("g2", g2_ver))
 
-w3emc_ver=os.getenv("w3emc_ver") or "2.9.2"
+w3emc_ver=os.getenv("w3emc_ver") or "2.9.1"
 load(pathJoin("w3emc", w3emc_ver))
 
 bacio_ver=os.getenv("bacio_ver") or "2.4.1"
 load(pathJoin("bacio", bacio_ver))
+
+sigio_ver=os.getenv("sigio_ver") or "2.3.2"
+load(pathJoin("sigio", sigio_ver))
+
+grib_util_ver=os.getenv("grib_util_ver") or "1.2.3"
+load(pathJoin("grib_util", grib_util_ver))
+
+prod_util=os.getenv("prod_util_ver") or "2.0.14"
+load(pathJoin("prod_util", prod_util_ver))
+
+wgrib2_ver=os.getenv("wgrib2_ver") or "2.0.8"
+load(pathJoin("wgrib2", wgrib2_ver))
 
 setenv("CMAKE_C_COMPILER", "cc")
 setenv("CMAKE_CXX_COMPILER", "CC")
 setenv("CMAKE_Fortran_COMPILER", "ftn")
 setenv("CMAKE_Platform", "wcoss2")
 
+whatis("Description: HAFS Applicationenvironment")

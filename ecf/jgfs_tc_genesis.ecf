@@ -1,0 +1,40 @@
+#!/bin/bash
+#PBS -N gfs_tc_genesis_avno_00
+#PBS -j oe
+#PBS -A ENSTRACK-DEV
+#PBS -q dev_transfer
+#PBS -S /bin/bash
+#PBS -l place=vscatter,select=3:ncpus=11:mpiprocs=11:mem=100GB
+#PBS -l walltime=00:30:00
+#PBS -l debug=true
+
+set -x
+
+export clustername=wcoss2
+export model=ens_tracker
+export cyc=00
+export envir=dev
+export job=gfs_avno_${cyc}
+export COMROOT=/lfs/h2/emc/ptmp/hananeh.jafary/$envir/com
+export DATAROOT=/lfs/h2/emc/ptmp/hananeh.jafary
+export HOMEens_tracker=/lfs/h2/emc/ens/noscrub/hananeh.jafary/test_fix_cmake
+
+module reset
+module use /lfs/h2/emc/ens/noscrub/hananeh.jafary/test_fix_cmake/modulefiles
+module load ${clustername}.lua
+module list
+
+export KEEPDATA=YES
+
+${HOMEens_tracker}/jobs/JGFS_TC_GENESIS
+
+%include <tail.h>
+
+%manual
+
+######################################################################
+##PURPOSE:  Executes the job that creates GFS TC genesis forecasts
+#######################################################################
+%end
+
+
