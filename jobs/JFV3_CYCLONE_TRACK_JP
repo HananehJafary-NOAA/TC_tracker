@@ -51,9 +51,8 @@ export SCRIPTens_tracker=${SCRIPTens_tracker:-$HOMEens_tracker/scripts}
 ##############################
 # Run setpdy and initialize PDY variables
 ##############################
-#setpdy.sh
-#. PDY
-export PDY=20230930
+setpdy.sh
+. PDY
 
 ##############################################
 # Define COM directories
