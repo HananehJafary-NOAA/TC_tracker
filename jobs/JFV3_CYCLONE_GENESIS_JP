@@ -67,14 +67,12 @@ if [[ -d /scratch2 ]] ; then
   export COMINsyn=${COMINsyn:-/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/TCvital}
   export COMINgfs=${COMINgfs:-/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/gfs.${PDY}}
 
-elif [[ -d /work ]] ; then
+elif [[ -d /work2/noaa ]] ; then
   # We are on MSU Orion
 #  export COMINgfs=${COMINgfs:-${COMROOTp1}/gfs/prod/gfs.${PDY}}
-#  export COMINgfs=/work/noaa/stmp/Jiayi.Peng/data_4_gfs
 #  export COMINsyn=${COMINsyn:-${COMROOTp1}/arch/prod/syndat}
-#  export COMINsyn=/work/noaa/global/kfriedma/glopara/git/tracker/syndat
-  export COMINsyn=/work/noaa/global/Jiayi.Peng/syndat
-  export COMINgfs=/work/noaa/global/Jiayi.Peng/ptmp/gfs.${PDY}
+  export COMINsyn=${COMINsyn:-/work2/noaa/hurricane/noscrub/hjafary/Input/TCvital}
+  export COMINgfs=${COMINgfs:-/work2/noaa/hurricane/noscrub/hjafary/Input/gfs.${PDY}}
 
 elif [[ -d /lfs5/HFIP ]] ; then
   # We are on NOAA Jet
@@ -82,7 +80,7 @@ elif [[ -d /lfs5/HFIP ]] ; then
   export COMINgfs=${COMINgfs:-/mnt/lfs5/HFIP/hwrfv3/Hananeh.Jafary/gfs_data/gfs.${PDY}}
 
 elif [[ -d /lfs/h1 ]] ; then
-  # We are on NOAA wcoss2  
+  # We are on NOAA wcoss2 
 #export COMINgfs=${COMINgfs:-$(compath.py $envir/com/gfs/${gfs_ver})/gfs.${PDY}}
 #export COMINsyn=${COMINsyn:-$(compath.py $envir/com/gfs/${gfs_ver})/syndat)}
   export COMINgfs=/lfs/h1/ops/prod/com/gfs/v16.3/gfs.$PDY

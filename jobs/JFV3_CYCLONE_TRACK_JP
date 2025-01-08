@@ -70,14 +70,14 @@ if [[ -d /scratch2 ]] ; then
   export COMINsyn=${COMINsyn:-/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/TCvital}
   export COMINgfs=${COMINgfs:-/scratch2/NCEPDEV/ovp/Hana.Jafary/Input/gfs.${PDY}}
 
-elif [[ -d /work ]] ; then
+elif [[ -d /work2 ]] ; then
   # We are on MSU Orion
 #  export COMINgfs=${COMINgfs:-${COMROOTp1}/gfs/prod/gfs.${PDY}}
 #  export COMINgfs=/work/noaa/stmp/Jiayi.Peng/data_4_gfs
 #  export COMINsyn=${COMINsyn:-${COMROOTp1}/arch/prod/syndat}
 #  export COMINsyn=/work/noaa/global/kfriedma/glopara/git/tracker/syndat
-  export COMINsyn=/work/noaa/global/Jiayi.Peng/syndat
-  export COMINgfs=/work/noaa/global/Jiayi.Peng/ptmp/gfs.${PDY}
+  export COMINsyn=${COMINsyn:-/work2/noaa/hurricane/noscrub/hjafary/Input/TCvital}
+  export COMINgfs=${COMINgfs:-/work2/noaa/hurricane/noscrub/hjafary/Input/gfs.${PDY}}
 
 elif [[ -d /lfs5/HFIP ]] ; then
   # We are on NOAA Jet
