@@ -1,20 +1,20 @@
 help([[
-loads TC_tracker modulefile and related set environment veriables on Orion
+loads TC_tracker prerequisites on GAEA C6
 ]])
 
-load("contrib")
-load("noaatools") 
+prepend_path("MODULEPATH", "/autofs/ncrc-svm1_proj/epic/spack-stack/spack-stack-1.6.0/envs/unified-env-c6/install/modulefiles/Core")
 
-prepend_path("MODULEPATH", "/work/noaa/epic/role-epic/spack-stack/orion/spack-stack-1.6.0/envs/unified-env-rocky9/install/modulefiles/Core")
-
-stack_intel_ver=os.getenv("stack_intel_ver") or "2021.9.0"
+stack_intel_ver=os.getenv("stack_intel_ver") or "2023.2.0"
 load(pathJoin("stack-intel", stack_intel_ver))
 
-stack_impi_ver=os.getenv("stack_impi_ver") or "2021.9.0"
-load(pathJoin("stack-intel-oneapi-mpi", stack_impi_ver))
+stack_mpich_ver=os.getenv("stack_mpich_ver") or "8.1.29"
+load(pathJoin("stack-cray-mpich", stack_mpich_ver))
+
+craype_ver=os.getenv("craype_ver") or "2.7.30"
+load(pathJoin("craype", craype_ver))
 
 cmake_ver=os.getenv("cmake_ver") or "3.23.1"
-load(pathJoin("cmake", cmake_ver)) 
+load(pathJoin("cmake", cmake_ver))
 
 jasper_ver=os.getenv("jasper_ver") or "2.0.32"
 load(pathJoin("jasper", jasper_ver))
@@ -58,8 +58,11 @@ load(pathJoin("wgrib2", wgrib2_ver))
 grib_util_ver=os.getenv("grib_util_ver") or "1.3.0"
 load(pathJoin("grib-util", grib_util_ver))
 
-setenv("CMAKE_C_COMPILER", "mpiicc")
-setenv("CMAKE_CXX_COMPILER", "mpiicpc")
-setenv("CMAKE_Fortran_COMPILER", "mpiifort")
-setenv("CMAKE_Platform", "orion.intel")
+setenv("CC", "cc")
+setenv("CXX", "CC")
+setenv("FC", "ftn")
+setenv("CMAKE_C_COMPILER", "cc")
+setenv("CMAKE_CXX_COMPILER", "CC")
+setenv("CMAKE_Fortran_COMPILER", "ftn")
+setenv("CMAKE_Platform", "gaeac6")
 

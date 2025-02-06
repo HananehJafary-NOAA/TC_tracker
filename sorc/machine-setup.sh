@@ -49,6 +49,12 @@ elif [[ -d /work2/noaa ]]; then
     module use /apps/contrib/modulefiles
     module use /apps/contrib/NCEPLIBS/lib/modulefiles
     module use /apps/contrib/NCEPLIBS/orion/modulefiles
+elif [[ -d /gpfs/f5 ]]; then
+  # We are on GAEAC5.
+  target=gaeac5
+elif [[ -d /gpfs/f6 ]]; then
+  # We are on GAEAC6.
+  target=gaeac6
 elif [[ -d /lfs/h1 && -d /lfs/h2 ]] ; then
     target=wcoss2
     . $MODULESHOME/init/sh

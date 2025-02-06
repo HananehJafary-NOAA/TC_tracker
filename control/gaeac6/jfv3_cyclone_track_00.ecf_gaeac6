@@ -1,0 +1,66 @@
+#!/bin/bash --login
+
+#SBATCH --job-name=gfs_tc_track
+#SBATCH --account=drsa-hurr1
+##SBATCH --qos=debug
+#SBATCH --partition=cron_c6
+##SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=00:45:00
+#SBATCH --mem=10g
+#SBATCH -o gfs_tc_track.log
+
+##%include <head.h>
+##%include <envir-p2.h>
+
+module reset
+target=gaeac6
+module use ../../modulefiles
+module load ${target}.lua
+module list
+
+set -x
+export envir=dev
+export cyc=00
+export job=gfs_genesis_${cyc}
+
+export PACKAGEROOT=/gpfs/f6/drsa-hurr1/world-shared/noscrub/Hananeh.Jafary/
+export HOMEens_tracker=${PACKAGEROOT}/fix_cmake
+export DATAROOT=/gpfs/f6/drsa-hurr1/world-shared/noscrub/Hananeh.Jafary
+export COMROOT=${DATAROOT}/com
+export KEEPDATA=YES
+
+# versions file for $tracker.ver
+#VERSION_FILE=/work2/noaa/hurricane/noscrub/hjafary/Input/versions/tracker.ver
+#if [ -f $VERSION_FILE ]; then
+#	  . $VERSION_FILE
+#  else
+#	    ecflow_client --abort
+#	      exit
+#fi
+
+# CALL executable job script here
+${HOMEens_tracker}/jobs/JFV3_CYCLONE_TRACK_JP
+
+if [ $? -ne 0 ]; then
+	  ecflow_client --abort
+	    exit
+fi
+
+#%include <tail.h>
+#%manual
+######################################################################
+#PURPOSE:  Executes the job that creates GFS TC genesis forecasts
+######################################################################
+
+######################################################################
+# Job specific troubleshooting instructions:
+#  see generic troubleshoot manual page
+#
+######################################################################
+
+# include manual page below
+#%end
+
