@@ -50,7 +50,7 @@ elif [[ -d /work ]] ; then
   machine=orion
   ${USHens_tracker}/extrkr_tcv_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}
 
-elif [[ -d /lfs4/HFIP ]] ; then
+elif [[ -d /lfs5/HFIP ]] ; then
   # We are on NOAA Jet
   machine=jet
   ${USHens_tracker}/extrkr_tcv_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}
@@ -110,7 +110,7 @@ elif [[ -d /work ]] ; then
   machine=orion
   ${USHens_tracker}/extrkr_gen_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}
 
-elif [[ -d /lfs4/HFIP ]] ; then
+elif [[ -d /lfs5/HFIP ]] ; then
   # We are on NOAA Jet
   machine=jet
   ${USHens_tracker}/extrkr_gen_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}

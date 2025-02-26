@@ -28,16 +28,16 @@ export COMROOT=/mnt/lfs5/HFIP/hwrfv3/Hananeh.Jafary/com
 export KEEPDATA=YES
 
 # versions file for tracker $tracker.ver
-VERSION_FILE=${PACKAGEROOT}/tracker_version/version.ver
-if [ -f $VERSION_FILE ]; then
-  . $VERSION_FILE
-else
-  ecflow_client --abort
-  exit
-fi
+#VERSION_FILE=${PACKAGEROOT}/tracker_version/version.ver
+#if [ -f $VERSION_FILE ]; then
+#  . $VERSION_FILE
+#else
+#  ecflow_client --abort
+#  exit
+#fi
 
 # CALL executable job script here
-${PACKAGEROOT}/TC_tracker.${TC_tracker_ver}/jobs/JFV3_CYCLONE_TRACK_JP
+${PACKAGEROOT}/update_jet/jobs/JFV3_CYCLONE_TRACK_JP
 
 if [ $? -ne 0 ]; then
   ecflow_client --abort

@@ -5,10 +5,10 @@
 #SBATCH --qos=batch
 #SBATCH --partition=xjet  #:tjet:ujet:sjet:xjet
 ##SBATCH --ntasks=1
-#SBATCH --nodes=1
-#SBATCH --tasks-per-node=1
+#SBATCH --nodes=6
+#SBATCH --tasks-per-node=2
 #SBATCH --cpus-per-task=1
-#SBATCH --time=00:40:00
+#SBATCH --time=01:00:00
 #SBATCH --mem=10g
 #SBATCH -o gfs_tc_genesis.log
 
@@ -29,13 +29,13 @@ export COMROOT=${DATAROOT}/com
 export KEEPDATA=YES
 
 # versions file for tracker $tracker.ver
-VERSION_FILE=${PACKAGEROOT}/tracker_version/version.ver
-if [ -f $VERSION_FILE ]; then
-  . $VERSION_FILE
-else
-  ecflow_client --abort
-  exit
-fi
+#VERSION_FILE=${PACKAGEROOT}/tracker_version/version.ver
+#if [ -f $VERSION_FILE ]; then
+#  . $VERSION_FILE
+#else
+#  ecflow_client --abort
+#  exit
+#fi
 
 if [ $? -ne 0 ]; then
   ecflow_client --abort
@@ -43,7 +43,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # CALL executable job script here
-${PACKAGEROOT}/TC_tracker.${TC_tracker_ver}/jobs/JFV3_CYCLONE_GENESIS_JP
+${PACKAGEROOT}/update_jet/jobs/JFV3_CYCLONE_GENESIS_JP
 
 #%include <tail.h> 
 #%manual
