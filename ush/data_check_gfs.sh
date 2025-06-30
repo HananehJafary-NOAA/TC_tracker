@@ -14,7 +14,7 @@ SLEEP_LOOP_MAX=`expr $SLEEP_TIME / $SLEEP_INT`
 if [ ${cmodel} = "gfs" ]; then
   datdir=${gfsdir}
   vit_incr=${FHOUT_CYCLONE:-6}                        
-  fcstlen=${FHMAX_CYCLONE:-240}                       
+  fcstlen=${FHMAX_CYCLONE:-120}                       
   fcsthrs=$(seq -f%03g -s' ' 0 $vit_incr $fcstlen)    
 fi
 

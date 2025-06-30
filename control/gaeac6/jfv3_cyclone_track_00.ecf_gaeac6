@@ -20,8 +20,8 @@ module list
 
 set -x
 export envir=dev
-export cyc=00
-export job=gfs_genesis_${cyc}
+export cyc=12
+export job=gfs_track_${cyc}
 
 export PACKAGEROOT=/gpfs/f6/drsa-hurr1/world-shared/noscrub/Hananeh.Jafary/
 export DATAROOT=/gpfs/f6/drsa-hurr1/world-shared/noscrub/Hananeh.Jafary
@@ -38,7 +38,7 @@ else
 fi
 
 # CALL executable job script here
-${PACKAGEROOT}/TC_tracker.${TC_tracker_ver}/jobs/JFV3_CYCLONE_TRACK_JP
+${PACKAGEROOT}/TC_tracker/jobs/JGFS_TC_TRACK_AVNO
 
 if [ $? -ne 0 ]; then
   ecflow_client --abort
