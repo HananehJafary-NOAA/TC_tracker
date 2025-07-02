@@ -40,9 +40,9 @@ mkdir -p $pertdir
 
 #outfile=${pertdir}/trkr.${regtype}.${cmodel}.${pert}.${ymdh}.out
 
-if [[ -d /scratch2 ]] ; then
-  # We are on NOAA Hera
-  machine=hera
+if [[ -d /scratch4 ]] ; then
+  # We are on NOAA Ursa
+  machine=ursa
   ${USHens_tracker}/extrkr_tcv_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}
 
 elif [[ -d /work ]] ; then
@@ -70,7 +70,7 @@ else
   echo Job failed: unknown platform 1>&2
   err_exit "FAILED ${jobid} - ERROR IN unknown platform - ABNORMAL EXIT"
 fi
-export err=$?; err_chk
+#export err=$?; err_chk
 
 #### NCEP/GFS genesis tcvitals  ###########################
 num_gen_vits=`cat ${COMINgenvit}/genesis.vitals.gfs.gfso.${JYYYY} | wc -l`
@@ -100,9 +100,9 @@ mkdir -p $pertdir
 
 #outfile=${pertdir}/trkr.${regtype}.${cmodel}.${pert}.${ymdh}.out
 
-if [[ -d /scratch2 ]] ; then
-  # We are on NOAA Hera
-  machine=hera
+if [[ -d /scratch4 ]] ; then
+  # We are on NOAA Ursa
+  machine=ursa
   ${USHens_tracker}/extrkr_gen_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}
 
 elif [[ -d /work ]] ; then

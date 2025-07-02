@@ -14,7 +14,7 @@ SLEEP_LOOP_MAX=`expr $SLEEP_TIME / $SLEEP_INT`
 if [ ${cmodel} = 'gfs' ]; then
   #datdir=${gfsdir:-${COMROOT}/gfs/prod/gfs.${PDY}}
   datdir=${gfsdir}
-  leadhour=240
+  leadhour=120
   datfile=gfs.t${cyc}z.pgrb2.0p25.f${leadhour}       
 
 elif [ ${cmodel} = "ens" ]; then

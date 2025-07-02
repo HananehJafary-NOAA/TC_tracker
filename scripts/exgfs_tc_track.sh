@@ -24,9 +24,9 @@ if [ $? -eq 6 ]; then exit; fi
 
 outfile=${pertdir}/trkr.${cmodel}.${pert}.${ymdh}.out
 
-if [[ -d /scratch2 ]] ; then
-  # We are on NOAA Hera
-  machine=hera
+if [[ -d /scratch4 ]] ; then
+  # We are on NOAA Ursa
+  machine=ursa
   ${USHens_tracker}/extrkr_gfs.sh ${loopnum} ${cmodel} ${ymdh} ${pert} ${pertdir} #2>&1 >${outfile}
 
 elif [[ -d /work ]] ; then

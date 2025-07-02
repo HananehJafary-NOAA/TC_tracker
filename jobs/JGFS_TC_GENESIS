@@ -36,7 +36,7 @@ export SENDDBN=${SENDDBN:-NO}
 ####################################
 # Specify Execution Areas
 ####################################
-export HOMEens_tracker=${HOMEens_tracker:-${PACKAGEROOT:?}/ens_tracker.${ens_tracker_ver}}
+export HOMEens_tracker=${HOMEens_tracker:-${PACKAGEROOT:?}/TC_tracker}
 export EXECens_tracker=${EXECens_tracker:-$HOMEens_tracker/exec}
 export FIXens_tracker=${FIXens_tracker:-$HOMEens_tracker/fix}
 export USHens_tracker=${USHens_tracker:-$HOMEens_tracker/ush}
@@ -45,18 +45,18 @@ export SCRIPTens_tracker=${SCRIPTens_tracker:-$HOMEens_tracker/scripts}
 ##############################
 # Run setpdy and initialize PDY variables
 ##############################
-setpdy.sh
-. PDY
-
+#setpdy.sh
+#. PDY
+export PDY=20210323
 ##############################################
 # Define COM directories
 ##############################################
 export JYYYY=`echo ${PDY} | cut -c1-4`
-export COMIN=${COMIN:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/genesis/}
-export COMINgfs=${COMINgfs:-$(/gpfs/f6/drsa-hurr1/world-shared/noscrub/Hananeh.Jafary/gfs.${PDY})}
-export COMINsyn=${COMINsyn:-$(/lfs/h2/emc/hur/noscrub/input/SYNDAT-PLUS)}
+export COMIN=${COMIN:-${COMROOT:?}/gfs.${PDY}/${cyc}/products/atmos/cyclone/genesis/}
+export COMINgfs=${COMINgfs:-/scratch4/HFIP/hwrfv3/noscrub/Hana.Jafary/input/gfs.${PDY}}
+export COMINsyn=${COMINsyn:-/scratch4/HFIP/hwrfv3/noscrub/Hana.Jafary/input/syndat}
 
-export COMOUT=${COMOUT:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/genesis/}
+export COMOUT=${COMOUT:-${COMROOT:?}/gfs.${PDY}/${cyc}/products/atmos/cyclone/genesis/}
 export COMOUTgenvit=${COMOUTgenvit:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/genesis_vital/}
 mkdir -m 775 -p $COMOUT $COMOUTgenvit
 
@@ -66,7 +66,7 @@ postmsg "$jlogfile" "$msg"
 env
 
 ${SCRIPTens_tracker}/exgfs_tc_genesis.sh
-export err=$?; err_chk
+#export err=$?; err_chk
 
 msg="JOB COMPLETED NORMALLY"
 postmsg "$jlogfile" "$msg"

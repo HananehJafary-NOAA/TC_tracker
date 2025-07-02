@@ -21,21 +21,21 @@ USERNAME=`echo $LOGNAME | awk '{ print tolower($0)'}`
 
 if [[ -d /lfs5 ]] ; then
      # We are on NOAA Jet
-    if ( ! eval module help > /dev/null 2>&1 ) ; then
-        echo load the module command 1>&2
-        source /apps/lmod/lmod/init/$__ms_shell
-    fi
-    target=jet
-    module purge
-elif [[ -d /scratch3/NCEPDEV ]] ; then
+  if ( ! eval module help > /dev/null 2>&1 ) ; then
+    echo load the module command 1>&2
+    source /apps/lmod/lmod/init/$__ms_shell
+  fi
+  target=jet
+  module purge
+elif [[ -d /scratch4/ ]] ; then
     # We are on NOAA Hera or Ursa
-    mount=$(findmnt -n -o SOURCE /home)
-    if [[ ${mount} =~ "ursa" ]]; then
-      target=ursa
-    else
-      target=hera
-    fi
-    module purge
+  mount=$(findmnt -n -o SOURCE /home)
+  if [[ ${mount} =~ "ursa" ]]; then
+    target=ursa
+  else
+    target=hera
+  fi
+  module purge
 elif [[ -d /work2/noaa ]]; then
   # We are on MSU Orion or Hercules
   mount=$(findmnt -n -o SOURCE /home)
@@ -44,13 +44,15 @@ elif [[ -d /work2/noaa ]]; then
   else
     target=orion
   fi
-    module purge
+  module purge
 elif [[ -d /gpfs/f5 ]]; then
   # We are on GAEAC5.
   target=gaeac5
+  module purge
 elif [[ -d /gpfs/f6 ]]; then
   # We are on GAEAC6.
   target=gaeac6
+  module purge
 elif [[ -d /lfs/h1 && -d /lfs/h2 ]] ; then
     target=wcoss2
     . $MODULESHOME/init/sh
