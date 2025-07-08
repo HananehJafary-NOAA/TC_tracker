@@ -53,8 +53,8 @@ export PDY=20210323
 ##############################################
 export JYYYY=`echo ${PDY} | cut -c1-4`
 export COMIN=${COMIN:-${COMROOT:?}/gfs.${PDY}/${cyc}/products/atmos/cyclone/genesis/}
-export COMINgfs=${COMINgfs:-/scratch4/HFIP/hwrfv3/noscrub/Hana.Jafary/input/gfs.${PDY}}
-export COMINsyn=${COMINsyn:-/scratch4/HFIP/hwrfv3/noscrub/Hana.Jafary/input/syndat}
+export COMINgfs=${COMINgfs:-/lfs/h2/emc/ens/noscrub/hananeh.jafary/gfs_testing/gfs.${PDY}}
+export COMINsyn=${COMINsyn:-/lfs/h1/ops/prod/com/gfs/v16.3/syndat}
 
 export COMOUT=${COMOUT:-${COMROOT:?}/gfs.${PDY}/${cyc}/products/atmos/cyclone/genesis/}
 export COMOUTgenvit=${COMOUTgenvit:-${COMROOT:?}/gfs.${PDY}/00/products/atmos/cyclone/genesis_vital/}

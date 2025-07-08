@@ -55,7 +55,7 @@ elif [[ -d /lfs5/HFIP ]] ; then
   machine=jet
   ${USHens_tracker}/extrkr_tcv_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}
 
-elif [[ -d /lfs/h1 ]] ; then
+elif [[ -d /lfs/h2 ]] ; then
   # We are on NOAA wcoss2
   machine=wcoss2
   ${USHens_tracker}/extrkr_tcv_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}  
@@ -115,7 +115,7 @@ elif [[ -d /lfs5/HFIP ]] ; then
   machine=jet
   ${USHens_tracker}/extrkr_gen_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}
 
-elif [[ -d /lfs/h1 ]] ; then
+elif [[ -d /lfs/h2 ]] ; then
   # We are on NOAA wcoss2
   machine=wcoss2
   ${USHens_tracker}/extrkr_gen_gfs.sh ${loopnum} ${cmodel} ${pert} ${pertdir} #2>&1 >${outfile}  

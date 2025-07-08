@@ -13,7 +13,7 @@ else
   export BUILD_TYPE=DEBUG
 fi
 
-module use ../modulefiles
+module use /lfs/h2/emc/ens/noscrub/hananeh.jafary/TC_tracker/modulefiles
 module load $target.lua
 module list
 
